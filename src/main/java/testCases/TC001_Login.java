@@ -20,6 +20,7 @@ public class TC001_Login extends LeafTapsWrappers {
 		
 	}
 	
+	
 	@Test(dataProvider="fetchData")
 	public void login(String UName, String Pwd, String LgdUser){
 		new LoginPage(driver, test)
