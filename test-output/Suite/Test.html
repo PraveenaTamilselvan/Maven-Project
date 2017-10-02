@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 17 11:33:00 IST 2017</td>
+<td>Started on:</td><td>Mon Oct 02 08:23:38 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41669 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30571 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,54 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC001_Login.login()'><b>login</b><br>Test class: testCases.TC001_Login<br>Parameters: DemoSalesManager, crmsfa, Demo Sales Manager</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:31)
+	at wrappers.GenericWrappers.verifyTextContainsByXpath(GenericWrappers.java:254)
+	at pages.HomePage.verifyLoginName(HomePage.java:21)
+	at testCases.TC001_Login.login(TC001_Login.java:30)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9423611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9423611'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:31)
+	at wrappers.GenericWrappers.verifyTextContainsByXpath(GenericWrappers.java:254)
+	at pages.HomePage.verifyLoginName(HomePage.java:21)
+	at testCases.TC001_Login.login(TC001_Login.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>3</td>
+<td>testCases.TC001_Login@1975490</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,35 +123,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC001_Login.login()'><b>login</b><br>Test class: testcases.TC001_Login<br>Parameters: DemoSalesManager, crmsfa, Demo Sales Manager</td>
+<td title='testCases.TC001_Login.login()'><b>login</b><br>Test class: testCases.TC001_Login<br>Parameters: DemoCSR, crmsfa, Demo B2B CSR</td>
 <td></td>
-<td>4</td>
-<td>testcases.TC001_Login@7740a2</td></tr>
-<tr>
-<td title='testcases.TC001_Login.login()'><b>login</b><br>Test class: testcases.TC001_Login<br>Parameters: DemoCSR, crmsfa, Demo B2B CSR</td>
-<td></td>
-<td>4</td>
-<td>testcases.TC001_Login@7740a2</td></tr>
-<tr>
-<td title='testcases.TC002_NegativeTesting.loginFailure()'><b>loginFailure</b><br>Test class: testcases.TC002_NegativeTesting<br>Parameters: DemoSalesManager, , password was empty reenter</td>
-<td></td>
-<td>2</td>
-<td>testcases.TC002_NegativeTesting@17b4f4c</td></tr>
-<tr>
-<td title='testcases.TC002_NegativeTesting.loginFailure()'><b>loginFailure</b><br>Test class: testcases.TC002_NegativeTesting<br>Parameters: , crmsfa, username was empty reenter</td>
-<td></td>
-<td>2</td>
-<td>testcases.TC002_NegativeTesting@17b4f4c</td></tr>
-<tr>
-<td title='testcases.TC002_NegativeTesting.loginFailure()'><b>loginFailure</b><br>Test class: testcases.TC002_NegativeTesting<br>Parameters: DemoSalesManager1, crmsfa, User not found.</td>
-<td></td>
-<td>2</td>
-<td>testcases.TC002_NegativeTesting@17b4f4c</td></tr>
-<tr>
-<td title='testcases.TC002_NegativeTesting.loginFailure()'><b>loginFailure</b><br>Test class: testcases.TC002_NegativeTesting<br>Parameters: DemoSalesManager, crmsfa1, Password incorrect.</td>
-<td></td>
-<td>2</td>
-<td>testcases.TC002_NegativeTesting@17b4f4c</td></tr>
+<td>5</td>
+<td>testCases.TC001_Login@1975490</td></tr>
 </table><p>
 </body>
 </html>

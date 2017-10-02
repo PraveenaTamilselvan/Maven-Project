@@ -16,7 +16,7 @@ public class TC001_Login extends LeafTapsWrappers {
 		category = "Smoke";
 		authors = "Gopi";
 		browserName = "chrome";
-		dataSheetName = "TC002";
+		dataSheetName = "TC001";
 		
 	}
 	
