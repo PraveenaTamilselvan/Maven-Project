@@ -16,7 +16,7 @@ public class TC002_LoginFailure extends LeafTapsWrappers {
 		category = "Smoke";
 		authors = "Bala";
 		browserName = "chrome";
-		dataSheetName = "TC002";
+		dataSheetName = "TC008";
 		
 	}
 	
