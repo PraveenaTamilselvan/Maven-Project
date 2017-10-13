@@ -6,4 +6,4 @@
       <class name="testCases.TC001_Login"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -- >
+</suite> <!-- Suite -->
