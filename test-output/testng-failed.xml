@@ -6,20 +6,4 @@
       <class name="testCases.TC001_Login"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="testCases.TC001_Login">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="login" invocation-numbers="0"/>
-          <include name="testDetails"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- testCases.TC001_Login -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

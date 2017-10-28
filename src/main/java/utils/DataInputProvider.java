@@ -1,5 +1,6 @@
 package utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -13,7 +14,7 @@ public class DataInputProvider{
 		String[][] data = null ;
 
 		try {
-			FileInputStream fis = new FileInputStream("./data/"+dataSheetName+".xlsx");
+			FileInputStream fis = new FileInputStream(new File(("./data/"+dataSheetName+".xlsx")));
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			XSSFSheet sheet = workbook.getSheetAt(0);	
 
