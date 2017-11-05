@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\rajkamal\Desktop\Selenium\PageObjectModel\testng.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\rajkamal\AppData\Local\Temp\testng-eclipse-250529024\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC001_Login" hash-for-method="login(DemoSalesManager, crmsfa, Demo Sales Manager)">login(DemoSalesManager, crmsfa, Demo Sales Manager)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.LearnGrid" hash-for-method="learnWindow">learnWindow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC001_Login" hash-for-method="login(DemoCSR, crmsfa, Demo B2B CSR)">login(DemoCSR, crmsfa, Demo B2B CSR)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,167 +116,211 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC001_Login</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.LearnGrid</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(DemoSalesManager, crmsfa, Demo Sales Manager)">
-                  </a> <!-- login(DemoSalesManager, crmsfa, Demo Sales Manager) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(DemoSalesManager, crmsfa, Demo Sales Manager)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login(DemoCSR, crmsfa, Demo B2B CSR)">
-                  </a> <!-- login(DemoCSR, crmsfa, Demo B2B CSR) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(DemoCSR, crmsfa, Demo B2B CSR)</span>
+                  <a name="learnWindow">
+                  </a> <!-- learnWindow -->
+                  <span class="method-name">learnWindow</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+Command duration or timeout: 135 milliseconds
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;LAPTOP-F3E4KIVG&apos;, ip: &apos;192.168.225.64&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse$$Lambda$74/30440635.apply(Unknown Source)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse$$Lambda$76/9878223.apply(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at org.openqa.selenium.remote.ProtocolHandshake$$Lambda$83/23658370.apply(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:254)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at testCases.LearnGrid.learnWindow(LearnGrid.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:738)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:148)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:102)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:96)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:209)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-Default_suite-class-failed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rajkamal\Desktop\Selenium\PageObjectModel\testng.xml</span>
+            <span class="header-content">C:\Users\rajkamal\AppData\Local\Temp\testng-eclipse-250529024\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.TC001_Login&quot;/&gt;
+      &lt;class name=&quot;testCases.LearnGrid&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;test name=&quot;Default test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.LearnGrid&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;learnWindow&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testCases.LearnGrid --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Default test(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'testCases.TC001_Login')
-data.setCell(0, 3, 5072);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'testCases.TC001_Login')
-data.setCell(1, 3, 4578);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(0, 1, 'learnWindow')
+data.setCell(0, 2, 'testCases.LearnGrid')
+data.setCell(0, 3, 874);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 874 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC001_Login</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeSuite</span>
+              <div class="chronological-class-name">testCases.LearnGrid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">learnWindow</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">830 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">838 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">1693 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">login(DemoSalesManager, crmsfa, Demo Sales Manager)</span>
-                <span class="method-start">13234 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">18307 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">19098 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">login(DemoCSR, crmsfa, Demo B2B CSR)</span>
-                <span class="method-start">27069 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">31648 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">32326 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">afterSuite</span>
-                <span class="method-start">32346 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
