@@ -11,7 +11,7 @@ public class TC001_Login7 extends LeafTapsWrappers {
 	@BeforeClass
 	public void testDetails(){
 	
-		testCaseName = "TC001_Loginname";
+		testCaseName = "TC001_Loginnamesadsadsa";
 		testDescription = "Login to Leaftaps";
 		category = "Smoke";
 		authors = "Gopi";
@@ -20,6 +20,8 @@ public class TC001_Login7 extends LeafTapsWrappers {
 		
 
 }
+	
+	
 	
 	
 	@Test(dataProvider="fetchData")
@@ -32,8 +34,6 @@ public class TC001_Login7 extends LeafTapsWrappers {
 		.clickLogOut();
 	}
 }
-
-
 
 
 
