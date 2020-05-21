@@ -11,6 +11,7 @@ public class TC001_Login8 extends LeafTapsWrappers {
 	@BeforeClass
 	public void testDetails(){
 	
+		int a = 10;
 		testCaseName = "TC001_Loginname";
 		testDescription = "Login to Leaftaps";
 		category = "Smoke";
