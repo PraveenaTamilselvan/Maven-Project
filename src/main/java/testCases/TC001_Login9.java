@@ -1,0 +1,42 @@
+package testCases;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pages.LoginPage;
+import wrappers.LeafTapsWrappers;
+
+public class TC001_Login9 extends LeafTapsWrappers {
+
+	@BeforeClass
+	public void testDetails(){
+		
+		int b =20;
+	
+		int a = 10;
+		testCaseName = "TC001_Loginname";
+		testDescription = "Login to Leaftaps";
+		category = "Smoke";
+		authors = "Gopi";
+		browserName = "chrome";
+		dataSheetName = "TC001";
+		
+
+}
+	
+	
+	@Test(dataProvider="fetchData")
+	public void login(String UName, String Pwd, String LgdUser){
+		new LoginPage(driver, test)
+		.enterUserName(UName)
+		.enterPassword(Pwd)
+		.clickLogin()
+		.verifyLoginName(LgdUser)
+		.clickLogOut();
+	}
+}
+
+
+
+
+
