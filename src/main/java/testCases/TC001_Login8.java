@@ -13,6 +13,7 @@ public class TC001_Login8 extends LeafTapsWrappers {
 		
 		int b =20;
 	
+		int a = 10;
 		testCaseName = "TC001_Loginname";
 		testDescription = "Login to Leaftaps";
 		category = "Smoke";
