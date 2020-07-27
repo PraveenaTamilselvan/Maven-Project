@@ -6,12 +6,15 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import wrappers.LeafTapsWrappers;
 
-public class TC001_Login7 extends LeafTapsWrappers {
+public class TC001_Login9 extends LeafTapsWrappers {
 
 	@BeforeClass
 	public void testDetails(){
+		
+		int b =20;
 	
-		testCaseName = "TC001_Loginnamesadsadsa";
+		int a = 10;
+		testCaseName = "TC001_Loginname";
 		testDescription = "Login to Leaftaps";
 		category = "Smoke";
 		authors = "Gopi";
@@ -20,8 +23,6 @@ public class TC001_Login7 extends LeafTapsWrappers {
 		
 
 }
-	
-	
 	
 	
 	@Test(dataProvider="fetchData")
@@ -34,6 +35,8 @@ public class TC001_Login7 extends LeafTapsWrappers {
 		.clickLogOut();
 	}
 }
+
+
 
 
 
