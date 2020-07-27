@@ -1,22 +1,21 @@
 package utils;
 
-import java.io.File;
 import java.io.FileInputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DataInputProvider{
+public class DataInputProvider {
 
 	public static String[][] getSheet(String dataSheetName) {
 
-		String[][] data = null ;
+		String[][] data = null;
 
 		try {
-			FileInputStream fis = new FileInputStream(new File(("./data/"+dataSheetName+".xlsx")));
+			FileInputStream fis = new FileInputStream("./data/" + dataSheetName + ".xlsx");
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
-			XSSFSheet sheet = workbook.getSheetAt(0);	
+			XSSFSheet sheet = workbook.getSheetAt(0);
 
 			// get the number of rows
 			int rowCount = sheet.getLastRowNum();
@@ -25,51 +24,37 @@ public class DataInputProvider{
 			int columnCount = sheet.getRow(0).getLastCellNum();
 			data = new String[rowCount][columnCount];
 
-
 			// loop through the rows
-			for(int i=1; i <rowCount+1; i++){
+			for (int i = 1; i < rowCount + 1; i++) {
 				try {
 					XSSFRow row = sheet.getRow(i);
-					for(int j=0; j <columnCount; j++){ // loop through the columns
+					for (int j = 0; j < columnCount; j++) { // loop through the columns
 						try {
 							String cellValue = "";
-							try{
+							try {
 								cellValue = row.getCell(j).getStringCellValue();
-							}catch(NullPointerException e){
+							} catch (NullPointerException e) {
 
 							}
 
-							data[i-1][j]  = cellValue; // add to the data array
+							data[i - 1][j] = cellValue; // add to the data array
 						} catch (Exception e) {
- 							e.printStackTrace();
-						}				
+							e.printStackTrace();
+						}
 					}
 
 				} catch (Exception e) {
- 					e.printStackTrace();
+					e.printStackTrace();
 				}
 			}
 			fis.close();
 			workbook.close();
 		} catch (Exception e) {
- 			e.printStackTrace();
+			e.printStackTrace();
 		}
 
 		return data;
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-
 
 }

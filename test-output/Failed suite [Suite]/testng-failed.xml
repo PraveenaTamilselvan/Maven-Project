@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="classes">
+  <test thread-count="2" name="Test" parallel="classes">
+    <classes>
+      <class name="testCases.annotaions2">
+        <methods>
+          <exclude name="a"/>
+        </methods>
+      </class> <!-- testCases.annotaions2 -->
+      <class name="testCases.annotaions"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.annotaions">
+        <methods>
+          <include name="b"/>
+          <include name="a"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testCases.annotaions -->
+      <class name="testCases.annotaions2">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testCases.annotaions2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.annotaions">
+        <methods>
+          <include name="b"/>
+          <include name="a"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testCases.annotaions -->
+      <class name="testCases.annotaions2">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testCases.annotaions2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test(failed)(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.annotaions">
+        <methods>
+          <include name="b"/>
+          <include name="a"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testCases.annotaions -->
+      <class name="testCases.annotaions2">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testCases.annotaions2 -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

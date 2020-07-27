@@ -7,46 +7,40 @@ import com.relevantcodes.extentreports.ExtentTest;
 import wrappers.LeafTapsWrappers;
 
 public class LoginPage extends LeafTapsWrappers {
-	
-	public LoginPage(RemoteWebDriver driver,ExtentTest test){	
-		 this.driver = driver;
-		 this.test = test;
-		if(!verifyTitle("Opentaps Open Source ERP + CRM")){
+
+	public LoginPage(RemoteWebDriver driver, ExtentTest test) {
+		this.driver = driver;
+		this.test = test;
+		if (!verifyTitle("Opentaps Open Source ERP + CRM")) {
 			reportStep("This is not Login Page", "FAIL");
-		}		
+		}
 	}
-	
-	public LoginPage enterUserName(String data){
+
+	public LoginPage enterUserName(String data) {
 		enterById("username", data);
 		return this;
 	}
-	
-	public LoginPage enterPassword(String data){
+
+	public LoginPage enterPassword(String data) {
 		enterById("password", data);
 		return this;
 	}
-	
-	public HomePage clickLogin(){
-		clickByClassName("decorativeSubmit");		
-		//HomePage hp = new HomePage();
+
+	public HomePage clickLogin() {
+		clickByClassName("decorativeSubmit");
+		// HomePage hp = new HomePage();
 		return new HomePage(driver, test);
 	}
-	
-	
-	public LoginPage clickLoginForFailure(){
-		clickByClassName("decorativeSubmit");		
-		//HomePage hp = new HomePage();
+
+	public LoginPage clickLoginForFailure() {
+		clickByClassName("decorativeSubmit");
+		// HomePage hp = new HomePage();
 		return this;
 	}
-	
-	
-	public LoginPage verifyErrorMessage(String text){
+
+	public LoginPage verifyErrorMessage(String text) {
 		verifyTextContainsById("errorDiv", text);
 		return this;
 	}
-	
-	
-	
-	
 
 }
